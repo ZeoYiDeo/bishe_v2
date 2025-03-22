@@ -89,16 +89,16 @@ def load_data(data_file):
 
 if __name__ == '__main__':
     # 图片文件夹路径
-    image_folder = "../data/Bili_Movie/Bili_Movie_cover"
+    image_folder = "../data/DY/DY_cover"
     # 输出文件路径
-    output_pt_path = "../data/Bili_Movie/Bili_Movie_vit.pt"
+    output_pt_path = "../data/DY/DY_vit.pt"
     # 调用函数处理图片特征并保存
     process_and_save_image_features_vit(image_folder, output_pt_path)
 
     # 文本文件路径
-    text_file = "../data/Bili_Movie/Bili_Movie_item.csv"
+    text_file = "../data/DY/DY_item.csv"
     # 输出文件路径
-    output_pt_path = "../data/Bili_Movie/Bili_Movie_bert.pt"
+    output_pt_path = "../data/DY/DY_bert.pt"
     # 调用函数处理文本特征并保存
     process_and_save_text_features_bert(text_file, output_pt_path)
     # # data_dict = torch.load("../data/Bili_Food/Bili_Food_vit.pt")
